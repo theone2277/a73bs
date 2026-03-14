@@ -7,12 +7,12 @@
     "types": "dist/index.d.ts",
     "module": "dist/index.js",
     "type": "module",
-    "scripts": {
+"scripts": {
         "lint": "tsc",
         "build": "tsup",
         "ci": "tsc --noEmit && pnpm test && tsup",
         "test": "vitest run --config vitest.config.ts",
-        "prepare": "npm run build && node .husky/install.mjs"
+        "prepare": "npm run build",
         "format": "prettier --cache --write .",
         "format:check": "prettier --cache --check ."
     },
